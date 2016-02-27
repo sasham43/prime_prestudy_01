@@ -38,10 +38,14 @@ header{
   background-color: #FFFFFF;
 }
 
-#box-1{
+.selected{
+  border: solid 2px hsla(300, 50%, 50%, 1);
+}
+
+#box1{
   background-color: #00AAFF;
 }
 
-#box-2{
+#box2{
   background-color: #00FFAA;
 }
