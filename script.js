@@ -20,21 +20,17 @@ function clicked(){
     }
   }
 
-  console.log(event.target.hasAttribute("selected"));
+  //console.log(event.target.hasAttribute("selected"));
 
 }
 
+function colorDestination(){
+  var paletteBox = document.querySelector(".selected");
+  var paletteStyle = window.getComputedStyle(paletteBox);
+  var paletteColor = paletteStyle.getPropertyValue("background-color");
+  event.target.style.backgroundColor = paletteColor;
+}
 
-var paletteBoxes = document.querySelectorAll(".box");
-
-console.log(paletteBoxes);
-
-
-// for(var i=0; i<paletteBoxes.length; i++){
-//   console.log(paletteBoxes[i].classList)
-// }
-
-//stupid jquery
-// $('.palette').click(function(event){
-//   alert(event.target.id);
-// })
+function colorClear(){
+  event.target.style.backgroundColor = "#FFFFFF";
+}
