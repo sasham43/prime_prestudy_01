@@ -16,9 +16,11 @@ header{
   margin: 10px auto 10px auto;
 }
 
+/*
 .box:hover{
   border: solid 1px #FF0000;
 }
+*/
 
 .palette{
   background-color: hsla(33, 70%, 22%, .9);
@@ -39,7 +41,7 @@ header{
 }
 
 .selected{
-  border: solid 2px hsla(300, 50%, 50%, 1);
+  border: solid 10px hsla(300, 50%, 50%, 1);
 }
 
 #box1{
